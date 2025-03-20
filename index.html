@@ -26,7 +26,7 @@
 
 
     <h2>Crear posteos</h2>
-    <form id="postForm" onsubmit="postData()">
+    <form id="postForm" onsubmit="event.preventDefault();postData()">
         <label for="postTitle">Titulo</label>
         <input type="text" id="postTitle" required placeholder="Titulo del posteo">
         <label for="postBody">Comentario</label>
